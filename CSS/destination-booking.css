@@ -1,0 +1,102 @@
+#book h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-emphasis: bold;
+}
+#book .tagline {
+  text-transform: uppercase;
+  text-align: initial;
+}
+
+#book button[type="submit"] {
+  border-radius: 100px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 1.5rem;
+  /* height: calc(100% - 1.5rem); */
+}
+
+#book form .name{
+  grid-area: name;
+}
+
+#book form .surname{
+  grid-area: surname;
+}
+
+#book form .hotel-select {
+  grid-area: hotel;
+}
+
+#book form .from {
+  grid-area: from;
+}
+
+#book form .to {
+  grid-area: to;
+}
+
+#book form .guests {
+  grid-area: guests;
+}
+
+#book form .submit {
+  grid-area: submit;
+}
+
+#book form .submit button {
+  width: 100%;
+}
+/*
+@media screen and (min-width: 768px) {
+  #book form {
+    grid-template-areas:
+      "name surname hotel from to guests submit";
+  }
+
+  #book h1 {
+    font-size: 64px;
+  }
+
+  #header::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.7)
+    );
+  }
+}
+*/
+#book .form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#book form {
+  display: grid;
+  grid-template-areas:
+    "name surname surname"
+    "hotel hotel hotel"
+    "from to guests"
+    "submit submit submit";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%; /* added this to ensure the form takes the full width of the form box */
+}
+
+@media screen and (max-width: 768px) {
+  #book .form-box {
+    padding: 10px;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,92 @@
+#topbar {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 20px 0;
+}
+
+#topbar > .wrap {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 20px;
+}
+
+#logo {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+}
+
+#back {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#back nav a, #menu nav a {
+  color: white;
+  border-bottom: 1px solid transparent;
+  line-height: 40px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#back nav a:hover {
+  border-color: white;
+  color: white;
+}
+
+#menu nav a.btn {
+  color: black;
+  border-radius: 100px;
+  border: 0;
+  padding: 0 1.5rem;
+}
+
+#menu nav a.btn:hover {
+  background: var(--bs-warning);
+  color: white;
+}
+
+header {
+  /* A way to use an image in a background: */
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/images/destionation-gallery-header.jpg');
+  background-position: center;
+
+  /* if we Google "css fill background with image", we find this: */
+  background-size: cover;
+
+
+  /* make the element take up the entire height of the screen */
+  height: 50vh;
+
+  /* space out children */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-bottom: 30px;
+
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+header h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}

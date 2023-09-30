@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency: Contact</title>
+    <meta name="description" content="Travel Agency: Contact">
+    <meta name="author" content="TA">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./css/destinations-header.css" rel="stylesheet" type="text/css">
+    <link href="./CSS/contact-us-form.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <style>
+      header h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        padding: 50px;
+        text-align: start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <div id="back">
+            <nav>
+              <a href="destinations.html">Back to Destinations Page</a>
+            </nav>
+          </div>
+          <div id="logo">
+            <img src="./icons/globe-white.svg" alt="Logo">
+          </div>
+          <div id="menu">
+            <nav>
+              <a href="#" class="btn btn-light">Sign in</a>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+      <h1>Contact Us</h1>
+    </header>
+
+    <section id="destinations">
+      <div id="book">
+        <div class="container-md wrap">
+          <div class="form-box">
+            <form action="contact-success.html">
+              <div class="name">
+                <label>Name</label>
+                <input aria-label="Enter your Name" class="form-control" id="book-field-name" min="1" name="name" required type="text">
+              </div>
+              <div class="phone">
+                <label>Phone Number</label>
+                <input aria-label="Enter your Phone Number" class="form-control" id="book-field-number" min="1" name="number" required type="tel">
+              </div>
+              <div class="email">
+                <label>Email</label>
+                <input aria-label="Enter your Email" class="form-control" id="book-field-email" min="1" name="email" required type="email">
+              </div>
+              <div class="feedback">
+                <label>Feedback</label>
+                <textarea aria-label="Enter your Feedback" class="form-control" id="book-field-feedback" rows="5" cols="50" name="feedback" required></textarea>
+              </div>
+              <div class="submit">
+                <button class="btn btn-warning" title="Search" type="submit">
+                  <img src="./icons/arrow-right.svg" alt="arrow">
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container-md">
+        <div>
+          <h3>Links</h3>
+          <nav>
+            <a href="main.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="input-group">
+            <input autocomplete="email" class="form-control" name="email" placeholder="Email" required type="email">
+            <button class="btn btn-success" type="submit">
+              Subscribe
+              <img src="./icons/arrow-right-white.svg" alt="Arrow">
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

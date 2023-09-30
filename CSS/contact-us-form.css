@@ -1,0 +1,77 @@
+#book .tagline {
+  text-transform: uppercase;
+  text-align: initial;
+}
+
+#book button[type="submit"] {
+  border-radius: 100px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 1.5rem;
+  /* height: calc(100% - 1.5rem); */
+}
+
+#book form .name{
+  grid-area: name;
+}
+
+#book form .phone{
+  grid-area: phone;
+}
+
+#book form .email{
+  grid-area: email;
+}
+
+#book form .feedback{
+  grid-area: feedback;
+}
+
+#book form .submit {
+  grid-area: submit;
+}
+
+#book form .submit button {
+  width: 100%;
+}
+
+#book .form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#book form .feedback textarea {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  height: auto; /* or set a specific height in pixels, like height: 80px; */
+}
+
+#book form {
+  display: grid;
+  grid-template-areas:
+    "name phone phone"
+    "email email email"
+    "feedback feedback feedback"
+    "submit submit submit";
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%; /* added this to ensure the form takes the full width of the form box */
+}
+
+@media screen and (max-width: 768px) {
+  #book .form-box {
+    padding: 10px;
+    margin: 10px 0;
+  }
+}

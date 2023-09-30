@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency: Paris</title>
+    <meta name="description" content="Travel Agency: Paris">
+    <meta name="author" content="TA">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./css/destinations-header.css" rel="stylesheet" type="text/css">
+    <link href="./css/destinations.css" rel="stylesheet" type="text/css">
+    <link href="./CSS/destination-booking.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <style>
+      header {
+        background-image:
+          linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 60%,
+            rgba(0, 0, 0, 0.7)),
+          url('/images/paris-header.jpg');
+      }
+
+      header h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        padding: 50px;
+        text-align: start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="topbar">
+        <div class="container-md wrap">
+          <div id="back">
+            <nav>
+              <a href="destinations.html">Back to Destinations Page</a>
+            </nav>
+          </div>
+          <div id="logo">
+            <img src="./icons/globe-white.svg" alt="Logo">
+          </div>
+          <div id="menu">
+            <nav>
+              <a href="#" class="btn btn-light">Sign in</a>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+      <h1>Paris</h1>
+    </header>
+
+    <section id="destinations">
+      <div class="container-md">
+        <h2>Bonjour!</h2>
+        <div class="description">
+          <p>
+            and welcome to Paris, a city that paints a portrait of romance, revolution,
+            and rich culinary tradition. Your suitcase will soon overflow with vibrant memories
+            and souvenirs as you <strong>embark on a journey</strong> that traverses the cultural
+            spectrum of the city. From the effervescent energy of the urban labyrinth to the
+            tranquil beauty of its garden-fringed neighborhoods, Paris is a universe ready to
+            charm any traveler.
+          </p>
+          <p>
+            If you're a history aficionado or an art enthusiast, the <em>iconic landmarks</em> of
+            Paris, like the Louvre and Notre Dame, should take precedence on your itinerary. Saunter
+            through the timeless corridors of the Louvre, where the gaze of Mona Lisa and the Venus de
+            Milo's grace await. Stand in the shadows of the imposing Notre Dame Cathedral, and let the
+            Gothic architecture tell you tales from centuries past. Enjoy a riverside picnic by the Seine,
+            while the Eiffel Tower paints an unforgettable silhouette against the twilight sky.
+          </p>
+          <p>
+            For those seeking a gentle pace, <strong>escape to the numerous parks and gardens</strong>
+            scattered throughout the city. Find serenity in the Jardin du Luxembourg or the Tuileries Garden,
+            where age-old trees offer a canopy of peace amid the city's hustle. If adventure runs in your
+            veins, cycle through the bohemian streets of Montmartre, exploring its art studios and vineyards.
+            Whether you're here for the cultural wealth or the delicate croissants, Paris will surely etch
+            itself on your heart.
+          </p>
+        </div>
+      </div>
+      <div id="book">
+        <div class="container-md wrap">
+          <h1>
+            Book your Trip
+          </h1>
+          <div class="form-box">
+            <form>
+              <div class="name">
+                <label>Name</label>
+                <input aria-label="Enter your Name" class="form-control" id="book-field-name" name="name" required type="text">
+              </div>
+              <div class="surname">
+                <label>Surname</label>
+                <input aria-label="Enter your Surname" class="form-control" id="book-field-surname" name="surname" required type="text">
+              </div>
+              <div class="hotel-select">
+                <label>Hotel</label>
+                <select aria-label="Select Hotel" class="form-select" id="book-field-hotel" name="hotel" required>
+                  <option value="" disabled selected>Hotel</option>
+                  <option value="Hotel1">Hotel1</option>
+                  <option value="Hotel2">Hotel2</option>
+                  <option value="Hotel3">Hotel3</option>
+                  <option value="Hotel4">Hotel4</option>
+                </select>
+              </div>
+              <div class="from">
+                <label for="book-field-from">From</label>
+                <input aria-label="From" class="form-control" id="book-field-from" name="from" required type="date">
+              </div>
+              <div class="to">
+                <label>To</label>
+                <input aria-label="To" class="form-control" id="book-field-to" name="to" required type="date">
+              </div>
+              <div class="guests">
+                <label>Guests</label>
+                <input aria-label="Enter a number of guests" class="form-control" id="book-field-guests" max="10" min="1" name="guests" required type="number" value="2">
+              </div>
+              <div class="submit">
+                <button class="btn btn-warning" title="Search" type="submit">
+                  <img src="./icons/arrow-right.svg" alt="arrow">
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container-md">
+        <div>
+          <h3>Links</h3>
+          <nav>
+            <a href="main.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="#">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+          <form class="input-group">
+            <input autocomplete="email" class="form-control" name="email" placeholder="Email" required type="email">
+            <button class="btn btn-success" type="submit">
+              Subscribe
+              <img src="./icons/arrow-right-white.svg" alt="Arrow">
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
